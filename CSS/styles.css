@@ -1,3 +1,145 @@
-body {
-  background-color: #f1f1f1;
+/*  цвет основного текста #212121 */
+/* Вторичный цвет текста  #757575 */
+/* Белый #FFFFFF */
+/* Акцент #2196F3;
+ */
+/* Вторичный цвет фона #E5E5E5 */
+/* Третичный цвет фона #2F303A */
+
+:root { 
+  --main-text: #212121;
+  --second-text: #757575;
+  --third-text: #FFFFFF; 
+
+  --main-background: #FFFFFF; 
+  --second-background:#E5E5E5; 
+  --third-background:#2F303A; 
+
+  --accent:#2196F3;
+  
+  ; 
 }
+
+
+
+body {
+  background-color: var(--main-background);
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text);
+
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+/* Стилизация списков */
+.list { 
+  list-style: none;
+}
+
+.list .link-nav {
+  text-decoration: none; 
+}
+
+/* Стилизация лого */
+.logo { 
+  color: var(--main-text);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  text-decoration: none;
+}
+.logo .web {
+  color: var(--accent);
+}
+
+/* Стилизация навигации */
+.link-nav { 
+  color: var(--main-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+}
+
+.link-nav:hover, .link-nav:focus { 
+  color: var(--accent);
+}
+
+/* Герой */
+.hero { 
+  color: var(--third-text);
+  background-color: var(--third-background);
+  text-align: center;
+}
+.hero .title { 
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  
+}
+
+.button { 
+  color: var(--third-text);
+  background-color: var(--accent);
+}
+
+
+/* Стилизация заголовков секций */
+.section-title { 
+  color: var(--main-text);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+
+}
+
+/* Стилизация особенностей */
+.feature .title { 
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  
+}
+.feature .text {
+  color: var(--second-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.46;
+  
+ }
+
+
+ /* Стилизация команды */
+ .our-team { 
+   background-color: var(--second-background);
+ }
+ .team .list {
+   background-color: var(--main-background);
+ }
+
+ .team .title { 
+
+ }
+ .team .text { 
+  color: var(--second-text);
+ }
+
+
+ /* Футер */
+ /* .footer { 
+   background-color: var(--third-background);
+ }
+
+ .footer .logo { 
+   color: var(--third-text);
+ }
+
+ .footer-list .link-nav { 
+   color: rgba(255,255,255,0.6) ;
+ } */
