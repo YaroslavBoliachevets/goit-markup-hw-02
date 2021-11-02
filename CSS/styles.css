@@ -33,6 +33,7 @@
 body {
   background-color: var(--main-background);
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: var(--main-text);
 
   text-align: left;
@@ -122,6 +123,12 @@ body {
   color: var(--third-text);
   background-color: var(--accent);
   cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 
@@ -143,28 +150,38 @@ body {
   text-transform: uppercase;
   
 }
+
 .feature .text {
   color: var(--second-text);
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.46;
-  
+  line-height: 1.71;
+
  }
+
 
 
  /* Стилизация команды */
- .our-team { 
+.our-team { 
    background-color: var(--second-background);
  }
- .team .list {
+
+.team .list {
    background-color: var(--main-background);
  }
 
  .team .title { 
-
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
  }
+
  .team .text { 
   color: var(--second-text);
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+
  }
 
 
@@ -175,9 +192,38 @@ body {
 }
 
 .list .filter{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+
   cursor:pointer; 
+
 }
 
 .list .fond { 
   background-color: var(--portfolio-filter);
+}
+
+/* Стилизация портфолио */
+
+.list .link {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
+.link .title{
+font-size: 18px;
+font-weight: 700;
+line-height: 2;
+text-align: left;
+
+}
+
+.link .text { 
+  color: var(--second-text);
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: left;
+
 }
