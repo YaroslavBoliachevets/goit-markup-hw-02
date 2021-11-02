@@ -6,6 +6,11 @@
 /* Вторичный цвет фона #E5E5E5 */
 /* Третичный цвет фона #2F303A */
 
+/* Portfolio.html 
+Фильтр background: #F5F4FA;
+
+*/
+
 :root { 
   --main-text: #212121;
   --second-text: #757575;
@@ -16,6 +21,9 @@
   --third-background:#2F303A; 
 
   --accent:#2196F3;
+
+  --portfolio-filter:#F5F4FA;
+
   
   ; 
 }
@@ -31,6 +39,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+
+
 /* Стилизация списков */
 .list { 
   list-style: none;
@@ -39,6 +49,8 @@ body {
 .list .link-nav {
   text-decoration: none; 
 }
+
+
 
 /* Стилизация лого */
 .logo { 
@@ -54,6 +66,23 @@ body {
   color: var(--accent);
 }
 
+
+
+/* Футер */
+.footer { 
+  background-color: var(--third-background);
+}
+
+.footer-list .link-nav { 
+  color: rgba(255,255,255,0.6) ;
+}
+
+.footer .logo, .footer .address { 
+  color: var(--third-text);
+}
+
+
+
 /* Стилизация навигации */
 .link-nav { 
   color: var(--main-text);
@@ -68,11 +97,18 @@ body {
   color: var(--accent);
 }
 
+.link-nav.current { 
+  color: var(--accent);
+}
+
+
+
 /* Герой */
 .hero { 
   color: var(--third-text);
   background-color: var(--third-background);
   text-align: center;
+  
 }
 .hero .title { 
   font-size: 44px;
@@ -85,6 +121,7 @@ body {
 .button { 
   color: var(--third-text);
   background-color: var(--accent);
+  cursor: pointer;
 }
 
 
@@ -131,15 +168,16 @@ body {
  }
 
 
- /* Футер */
- /* .footer { 
-   background-color: var(--third-background);
- }
 
- .footer .logo { 
-   color: var(--third-text);
- }
+/* Portfolio.html Стилизация фильтра */
+.list .filter:hover, .list .filter:focus { 
+  background-color: var(--accent);
+}
 
- .footer-list .link-nav { 
-   color: rgba(255,255,255,0.6) ;
- } */
+.list .filter{
+  cursor:pointer; 
+}
+
+.list .fond { 
+  background-color: var(--portfolio-filter);
+}
